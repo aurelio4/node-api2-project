@@ -1,13 +1,13 @@
 module.exports = {
   development: {
     client: 'sqlite3',
-    connection: { filename: './data/lambda.db3' },
+    connection: { filename: './src/data/lambda.db3' },
     useNullAsDefault: true,
     migrations: {
-      directory: './data/migrations',
+      directory: './src/data/migrations',
     },
     seeds: {
-      directory: './data/seeds',
+      directory: './src/data/seeds',
     },
     pool: {
       afterCreate: (conn, done) => {
