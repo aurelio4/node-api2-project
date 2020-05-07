@@ -14,6 +14,6 @@ server.get('/', (req, res) => {
 
 server.use('/api/posts', postsRouter)
 
-server.listen(4000, () => {
+server.listen(port, () => {
   console.log(`server is up on port ${port}`)
 })
